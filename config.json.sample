@@ -1,0 +1,6 @@
+{
+    "token":"DISCORD BOT TOKEN",
+    "rainwave_api": "RAINWAVE API KEY",
+    "rainwaive_user_id": "RAINWAVE USER ID",
+    "channel_id": CHANNEL_ID
+}
