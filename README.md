@@ -8,11 +8,15 @@ You'll need :
 * [discord.py](https://discordpy.readthedocs.io/en/stable/intro.html#installing) with voice support
 * [requests](https://pypi.org/project/requests/)
 
-You also need to get a [rainwave.cc](https://rainwave.cc/) api key and user id. You just have to register/login in the site, and get it [here](https://rainwave.cc/keys/)
+You also need to get a [rainwave.cc](https://rainwave.cc/) api key and user id. You just have to register/login in the site, and get it [here](https://rainwave.cc/keys/).
+
+You need to get the channel id where you want the bot to post. To get it, just right click on the channel name, and copy the id.
 
 You have to edit the `config.json.sample` file, fill the fields, and rename it `config.sample`
 
 You are now ready to go.
+
+`python main.py` to launch the bot.
 
 ## How to use
 
