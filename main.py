@@ -5,8 +5,10 @@ import asyncio
 import requests
 from datetime import datetime
 
+intents = discord.Intents.default()
+intents.message_content = True
 
-bot = commands.Bot(command_prefix=commands.when_mentioned_or("!"))
+bot = commands.Bot(command_prefix=commands.when_mentioned_or("!"), intents=intents)
 
 ffmpeg_options = {
     "options": "-vn"
@@ -162,7 +164,8 @@ def main():
 
         api = RainwaveApi(conf)
 
-        bot.add_cog(RainWave(bot, api, conf))
+
+        asyncio.run(bot.add_cog(RainWave(bot, api, conf)))
 
         bot.run(conf["token"])
 
